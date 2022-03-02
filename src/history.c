@@ -37,7 +37,6 @@ char *get_history(List *list, int id){
   head = head->next;
   while(head->next != NULL && head->id != id){
     head = head->next;
-    printf("%d\n",head->id);
     }
   return head->str;
 }
